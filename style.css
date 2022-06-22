@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    padding: 40px;
+    background-image: url('img/bg.jpg');
+    color: #fff;
+    /* background-size: cover; */
+    box-shadow: rgba(0,0,0,0.6) 0 0 0 10000px inset;
+
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 100px;
+    color: orange;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: orange;
+    text-decoration: underline;
+    font-weight: bold;
+   font-size: 25px;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+
+.logo img {
+    width: 130px;
+}
+
+.main-wrapper {
+    max-width: 650px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 50px;
+}
+form div {
+    padding: 15px 0;
+}
+form div label {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+}
+form div input {
+    height: 50px;
+    width: 100%;
+    font-size: 18px;
+    padding: 0 10px;
+    background: rgb(230, 230, 230);
+    outline: none;
+    border: none;
+    border-radius: 22px;
+}
+
+form div button {
+    cursor: pointer;
+    padding: 15px 30px;
+    font-size: 18px;
+    display: block;
+    background: orange;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+form ul {
+    list-style: none;
+}
+
+#registrationForm ul li {
+    color: red;
+}
+.no-acc-register {
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: gray;
+}
+
+.no-acc-register p {
+    padding: 0;
+    margin: 0;
+    margin-right: 15px;
+}
+.no-acc-register a {
+    text-decoration: none;
+    color: gray;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    text-decoration: underline;
+}
+.no-acc-register a:hover {
+    color: orange;
+   
+}
+button {
+    cursor: pointer;
+}
+
+.custom-modal {
+    display: none;
+width: 100%;
+height: 100%;
+color: orange;
+}
+
+.overlay {
+    position: fixed; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-modal a#closeModal {
+    height: 7px;
+    width: 20px;
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    cursor: pointer;
+}
+#registrationForm {
+    width: 700px;
+    background-color: #fff;
+    padding: 40px;
+    position: relative;
+}
+.inner-container {
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.left-side {
+    text-align: center;
+    background: rgb(255, 255, 255);
+}
+.left-side p {
+    color: black;
+}
+.right-side {
+    background: rgb(255, 255, 255);
+}
+.inner-container img.profile {
+    width: 70%;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.inner-container.right-side form {
+    display: flex;
+    height: 70px;
+    background: gray;
+
+}
+
+#editAccount {
+padding: 4px 6px;
+background: orange;
+    color: black;
+    border: none;
+    border-radius: 5px;
+}
+#logout {
+    padding: 4px 6px;
+    background: orange;
+    color: black;
+    border: none;
+    border-radius: 5px;
+}
+
+.inner-container.right-side form textarea{
+    width: 85%;
+    border: 0;
+    padding: 10px;
+    resize: none;
+    outline-color: orange;
+}
+
+.inner-container.right-side form button {
+    border: 0;
+    width: 15%;
+    background: orange;
+    border: none;
+
+}
+
+#deleteProfile {
+    border-color: red;
+    padding: 15px;
+}
+
+#allPostWrapper .single-post {
+    background-color: #eaeaea;
+    padding: 15px;
+    margin-top: 15px;
+    color: #000;
+}
+
+#allPostWrapper .single-post .post-content {
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+#allPostWrapper .single-post .post-actions {
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+}
+
+#allPostWrapper .single-post .post-actions p img {
+    width: 45px;
+    border-radius: 30px;
+}
+#allPostWrapper .single-post  button.like-btn {
+    background-image: url('img/like.png');
+    padding: 5px 15px 5px 40px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    border: 0;
+}
+
+#allPostWrapper .single-post button.comment-btn {
+    background-image: url('img/comment.png');
+    padding: 5px 15px 5px 40px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    border: 0;
+}
+
+#allPostWrapper .single-post button.remove-btn {
+    border-color: red;
+    color: red;
+    padding: 5px 15px;
+}
+#allPostWrapper .single-post .post-comments form {
+    height: 30px;
+    margin-top: 15px;
+}
+
+#allPostWrapper .single-post .post-comments form input {
+    width: 85%;
+    padding: 0 10px;
+}
+
+#allPostWrapper .single-post .post-comments form button {
+    width: 15%;
+    background-color: orange;
+}
+
+#allPostWrapper .single-post .post-comments {
+    display: none;
+}
+
+#allPostWrapper .single-post .post-comments .single-comment {
+    border: 1px dotted orange;
+    padding: 10PX;
+    margin-top: 10px;
+}
+
+.like-btn:disabled {
+    color: orange;
+}
+.responsive {
+    width: 30px;
+    border-radius: 30px;
+    margin-right: 5px;
+}
+
+.single-comment span {
+    margin-right: 10px;
+    color: grey;
+}

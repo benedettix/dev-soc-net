@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="js/Session.js"></script>
+    <script defer src="js/User.js"></script>
+    <script defer src="js/Comment.js"></script>
+    <script defer src="js/Post.js"></script>
+    <script defer src="js/account.js"></script>
+    <title>Account</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="inner-container left-side">
+                    <img src="img/profile.jpg" class="profile">
+                    <p><b id="username"></b></p>
+                    <p id="email"></p>
+
+                    <button id="editAccount">Edit Account</button>
+                    <button id="logout">Log out</button>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="inner-container right-side">
+                    <form action="" id="postForm">
+                        <textarea id="postContent" placeholder="Your status here..."></textarea>
+                        <button>Post</button>
+                    </form>
+                    <div id="allPostWrapper">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="custom-modal">
+        <button id="closeModal">X</button>
+
+        <form id="editForm">
+            <h2>Edit your profile</h2>
+            <div>
+                <label for="user_name">Username</label>
+                <input type="text" name="user_name" id="user_name" placeholder="benyx.123">
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="text" name="edit_email" id="edit_email" placeholder="example@email.com">
+            </div>
+
+            <div>
+                <button>Change</button>
+            </div>
+
+
+        </form>
+        <hr>
+        <button id="deleteProfile">Delete profile</button>
+    </div>
+
+
+</body>
+
+</html>

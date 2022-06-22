@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="js/Validation.js"></script>
+    <script defer src="js/Session.js"></script>
+    <script defer src="js/User.js"></script>
+    <script defer src="js/app.js"></script>
+    <title>Hexa</title>
+</head>
+
+<body>
+    <div class="logo">
+        <img src="img/logo.png" alt="logo">
+    </div>
+
+    <h1>Social Netwoork for web developers</h1>
+
+    <div class="main-wrapper">
+        <form action="" id="loginForm">
+            <h2>Login</h2>
+
+            <div>
+                <label for="">Email</label>
+                <input type="email" name="email" id="login_email" placeholder="example@mail.com">
+            </div>
+
+            <div>
+                <label for="">Password</label>
+                <input type="password" name="password" id="login_password" placeholder="*****">
+            </div>
+            <div>
+                <button>Log in</button>
+            </div>
+
+        </form>
+        <div class="no-acc-register">
+            <p>Create New Account ➤</p>
+            <a href="#" id="registration">Register here!</a>
+        </div>
+    </div>
+
+
+
+    <div class="custom-modal">
+        <div class="overlay">
+
+
+            <form id="registrationForm">
+                <a id="closeModal">X</a>
+                <h2>Register User</h2>
+                <div>
+                    <label for="user_name">Username</label>
+                    <input type="text" name="user_name" id="user_name" placeholder="benyx.123">
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" placeholder="example@email.com">
+                </div>
+
+                <div>
+                    <label for="register_password">Password</label>
+                    <input type="password" name="register_password" id="register_password" placeholder="*****">
+                </div>
+                <div>
+                    <label for="">Repeat Password</label>
+                    <input type="password" name="repeat_password" id="repeat_password" placeholder="*****">
+                </div>
+                <div>
+                    <button>Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
